@@ -121,6 +121,22 @@ while (continuar == 1)
     verHistorico[posicao] = calculoCompleto;
     posicao++;
 
+
+    if (posicao < verHistorico.Length)
+    {
+        verHistorico[posicao] = calculoCompleto;
+        posicao++;
+
+    }
+    else
+    {
+        verHistorico = new string[100];
+        posicao = 0;
+
+        verHistorico[posicao] = calculoCompleto;
+        posicao++;
+    }
+
     #region Switch
     /*
         Console.Write("Digite um numero: ");
