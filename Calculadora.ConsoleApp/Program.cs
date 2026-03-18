@@ -47,7 +47,7 @@ while (continuar == 1)
         Console.WriteLine("Primeiro numero: " + a);
         Console.WriteLine("Segundo numero: " + b);
         Console.WriteLine(a + " + " + b + " = " + resultado);
-        calculoCompleto = a + " / " + b + " = " + resultado;
+        calculoCompleto = a + " + " + b + " = " + resultado;
 
     }
     else if (qualCalculo == 2)
@@ -64,7 +64,7 @@ while (continuar == 1)
         Console.WriteLine("Primeiro numero: " + a);
         Console.WriteLine("Segundo numero: " + b);
         Console.WriteLine(a + " - " + b + " = " + resultado);
-        calculoCompleto = a + " / " + b + " = " + resultado;
+        calculoCompleto = a + " - " + b + " = " + resultado;
     }
     else if (qualCalculo == 3)
     {
@@ -81,7 +81,7 @@ while (continuar == 1)
         Console.WriteLine("Primeiro numero: " + a);
         Console.WriteLine("Segundo numero: " + b);
         Console.WriteLine(a + " X " + b + " = " + resultado);
-        calculoCompleto = a + " / " + b + " = " + resultado;
+        calculoCompleto = a + " X " + b + " = " + resultado;
     }
     else if (qualCalculo == 4)
     {
@@ -114,15 +114,15 @@ while (continuar == 1)
     {
         for (int i = 0; i < posicao; i++)
         {
-            Console.WriteLine(verHistorico[i]);
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Historico de Operacões");
+            Console.WriteLine("Operacão " + i + ": " + verHistorico[i]);
+
         }
     }
 
-    verHistorico[posicao] = calculoCompleto;
-    posicao++;
 
-
-    if (posicao < verHistorico.Length)
+    if (posicao <= verHistorico.Length)
     {
         verHistorico[posicao] = calculoCompleto;
         posicao++;
